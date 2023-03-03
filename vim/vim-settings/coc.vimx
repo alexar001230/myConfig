@@ -1,0 +1,48 @@
+" coc 热键
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
+autocmd CursorHold * silent call CocActionAsync('highlight')
+
+
+" coc-markmap
+nmap <Leader>mm <Plug>(coc-markmap-create)
+vmap <Leader>mm <Plug>(coc-markmap-create-v)
+" coc-pretier
+vmap <Leader>am  <Plug>(coc-format-selected)
+nmap <Leader>am  <Plug>(coc-format-selected)
+
+" coc
+nmap <leader><leader><space>  <Plug>(coc-codeaction)
+nmap <leader><space>  <Plug>(coc-fix-current)
+
+let g:coc_global_extensions = [
+	\ 'coc-css',
+	\ 'coc-diagnostic',
+	\ 'coc-explorer',
+	\ 'coc-flutter-tools',
+	\ 'coc-gitignore',
+	\ 'coc-html',
+	\ 'coc-json',
+	\ 'coc-lists',
+	\ 'coc-prettier',
+	\ 'coc-pyright',
+	\ 'coc-python',
+	\ 'coc-java',
+	\ 'coc-markdownlint',
+	\ 'coc-sql',
+	\ 'coc-xml',
+	\ 'coc-snippets',
+	\ 'coc-sourcekit',
+	\ 'coc-stylelint',
+	\ 'coc-syntax',
+	\ 'coc-tasks',
+	\ 'coc-translator',
+	\ 'coc-tslint-plugin',
+	\ 'coc-tsserver',
+	\ 'coc-vetur',
+	\ 'coc-vimlsp',
+	\ 'coc-yaml',
+	\ 'coc-yank']
+
